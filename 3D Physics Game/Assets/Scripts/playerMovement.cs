@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections.Generic;
 
 public class playerMovement : MonoBehaviour
 {
@@ -21,15 +22,15 @@ public class playerMovement : MonoBehaviour
             rb.AddForce(Vector3.forward * speed);
         }
 
-        if (Input.GetKey(KeyCode.A))
+        if (Input.GetKey(KeyCode.S))
         {
             rb.AddForce(Vector3.back * speed);
         }
 
-        /* if (Input.GetKey(KeyCode.S))
+        if (Input.GetKey(KeyCode.A))
         {
             rb.AddForce(Vector3.left * speed);
-        }*/
+        }
 
         if (Input.GetKey(KeyCode.D))
         {
